@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Stable identity preserves existing settings, registrations and instance locking. -->
+	<key>CFBundleIdentifier</key><string>local.finder-neovim</string>
+	<key>CFBundleName</key><string>Neovlet</string>
+	<key>CFBundleDisplayName</key><string>Neovlet</string>
+	<key>CFBundleExecutable</key><string>Neovlet</string>
+	<key>CFBundlePackageType</key><string>APPL</string>
+	<key>CFBundleShortVersionString</key><string>0.1.0</string>
+	<key>CFBundleVersion</key><string>1</string>
+	<key>LSMinimumSystemVersion</key><string>15.0</string>
+	<key>LSUIElement</key><true/>
+	<key>NSHighResolutionCapable</key><true/>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>Neovlet creates and focuses its own editor terminal in Ghostty to open your files.</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key><string>Text and Source Code</string>
+			<key>CFBundleTypeRole</key><string>Editor</string>
+			<key>LSHandlerRank</key><string>Alternate</string>
+			<key>LSItemContentTypes</key>
+			<array><string>public.text</string><string>public.source-code</string></array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeName</key><string>Configuration and Additional Source Files</string>
+			<key>CFBundleTypeRole</key><string>Editor</string>
+			<key>LSHandlerRank</key><string>Alternate</string>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>toml</string><string>yaml</string><string>yml</string>
+				<string>jsonc</string><string>ini</string><string>conf</string>
+				<string>cfg</string><string>env</string><string>ts</string><string>tsx</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
